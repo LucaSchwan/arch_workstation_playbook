@@ -13,6 +13,7 @@
         name:
           - vim
           - tmux
+          - git
           - firefox
           - qtile
           - alacritty
