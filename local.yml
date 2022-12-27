@@ -1,0 +1,19 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+
+  tasks:
+    - name: make sure the pacman cache is up to date
+      pacman:
+        update_cache: yes
+
+    - name: install the base packages needed
+      pacman:
+        name:
+          - vim
+          - tmux
+          - firefox
+          - qtile
+          - alacritty
+        state: present
