@@ -1,0 +1,1 @@
+sudo ansible-pull -U https://www.github.com/LucaSchwan/arch_workstation_playbook
