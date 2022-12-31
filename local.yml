@@ -23,6 +23,6 @@
 
     - name: clone dotfiles
       git:
-        repo: git@github.com:LucaSchwan/dotfiles.git
-        dest: /home/ehrenschwan/
-        key_file: /home/ehrenschwan/.ssh/id_ed25519
+        repo: "git@github.com:LucaSchwan/dotfiles.git"
+        dest: "~/"
+        key_file: "~/.ssh/id_ed25519"
