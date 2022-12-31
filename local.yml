@@ -3,6 +3,8 @@
   connection: local
   become: true
 
+  gather_facts: false
+
   tasks:
     - name: make sure the pacman cache is up to date
       pacman:
