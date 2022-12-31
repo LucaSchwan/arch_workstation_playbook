@@ -18,4 +18,5 @@
           - firefox
           - qtile
           - alacritty
+          - stow
         state: present
