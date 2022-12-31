@@ -38,3 +38,4 @@
         cmd: /home/ehrenschwan/dotfiles/enable.sh
         args:
           chdir: /home/ehrenschwan/dotfiles
+      become_user: ehrenschwan
