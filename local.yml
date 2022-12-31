@@ -38,8 +38,3 @@
       shell:
         cmd: /home/ehrenschwan/dotfiles/enable.sh
         chdir: /home/ehrenschwan/dotfiles
-      register: command_output
-
-    - name: debug
-      debug:
-        var: command_output.stdout_lines
