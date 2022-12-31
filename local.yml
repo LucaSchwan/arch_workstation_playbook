@@ -36,3 +36,5 @@
     - name: execute config script
       script:
         cmd: /home/ehrenschwan/dotfiles/enable.sh
+        args:
+          chdir: /home/ehrenschwan/dotfiles
