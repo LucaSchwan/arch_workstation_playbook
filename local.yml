@@ -27,3 +27,12 @@
         dest: "~/dotfiles"
         key_file: "~/.ssh/id_ed25519"
       become_user: ehrenschwan
+
+    - name: making config script executable
+      file:
+        dest: /home/ehrenschwan/dotfiles/enable.sh
+        mode: a+x
+
+    - name: execute config script
+      script:
+        cmd: /home/ehrenschwan/dotfiles/enable.sh
