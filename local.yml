@@ -25,5 +25,4 @@
       git:
         repo: git@github.com:LucaSchwan/dotfiles.git
         dest: /home/ehrenschwan/
-        clone: yes
-        update: yes
+        key_file: /home/ehrenschwan/.ssh/id_ed25519
