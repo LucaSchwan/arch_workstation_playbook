@@ -36,7 +36,7 @@
 
     - name: execute config script
       shell:
-        cmd: ./home/ehrenschwan/dotfiles/enable.sh
+        cmd: /home/ehrenschwan/dotfiles/enable.sh
         chdir: /home/ehrenschwan/dotfiles
       register: command_output
 
