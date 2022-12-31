@@ -2,7 +2,6 @@
 - hosts: localhost
   connection: local
   user: ehrenschwan
-  become: true
 
   gather_facts: false
 
