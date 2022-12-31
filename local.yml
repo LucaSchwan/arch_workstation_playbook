@@ -27,6 +27,7 @@
         repo: git@github.com:LucaSchwan/dotfiles.git
         dest: /home/ehrenschwan/dotfiles
         key_file: /home/ehrenschwan/.ssh/id_ed25519
+      register: config
       become_user: ehrenschwan
 
     - name: making config script executable
@@ -38,3 +39,4 @@
       shell:
         cmd: /home/ehrenschwan/dotfiles/enable.sh
         chdir: /home/ehrenschwan/dotfiles
+      changed_when: config.changed
