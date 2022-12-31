@@ -26,6 +26,7 @@
         repo: git@github.com:LucaSchwan/dotfiles.git
         dest: ~/dotfiles
         key_file: ~/.ssh/id_ed25519
+      become_user: ehrenschwan
 
     - name: making config script executable
       file:
