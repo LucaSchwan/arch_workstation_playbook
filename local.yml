@@ -20,3 +20,10 @@
           - alacritty
           - stow
         state: present
+
+   - name: clone dotfiles
+     git:
+       repo: git@github.com:LucaSchwan/dotfiles.git
+       dest: /home/ehrenschwan/
+       clone: yes
+       update: yes
