@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   connection: local
+  user: ehrenschwan
   become: true
 
   gather_facts: false
@@ -26,7 +27,6 @@
         repo: git@github.com:LucaSchwan/dotfiles.git
         dest: ~/dotfiles
         key_file: ~/.ssh/id_ed25519
-      become_user: ehrenschwan
 
     - name: making config script executable
       file:
@@ -38,4 +38,3 @@
         cmd: /home/ehrenschwan/dotfiles/enable.sh
         args:
           chdir: /home/ehrenschwan/dotfiles
-      become_user: ehrenschwan
