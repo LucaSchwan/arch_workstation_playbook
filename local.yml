@@ -30,7 +30,7 @@
       register: config
       become_user: ehrenschwan
 
-    - name: making config script executable
+    - name: make config script executable
       file:
         dest: /home/ehrenschwan/dotfiles/enable.sh
         mode: a+x
